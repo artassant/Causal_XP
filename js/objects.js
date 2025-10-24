@@ -21,7 +21,7 @@ export class MovingObject {
     this.last_item_time = 0;
 
     // ~1800/128 in python → tuned for 32 fps loop (31.25 ms)
-    this.move_interval = 3000 / 128; // ~14.06 ms per index / from 1800
+    this.move_interval = 3280 / 128; // ~14.06 ms per index / from 1800
     this.item_interval = 300; // change digit every 300ms
   }
 
@@ -64,4 +64,5 @@ export class MovingObject {
     const dy = this.y - other.y;
     return Math.sqrt(dx * dx + dy * dy);
   }
+
 }
