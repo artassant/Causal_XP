@@ -16,7 +16,7 @@ export class Experiment {
     this.lag = lag;                                 // ms
     this.change_duration = 94;                      // ms letter visibility
     this.collision_time = null;
-    this.fake_causal_duration = 350;
+    this.fake_causal_duration = 410;
     this.fake_causal_pause_ended = false;
     this.state = "running";
     this.t1_value = null;
@@ -231,4 +231,5 @@ export class Experiment {
       num_targets: this.num_targets
     };
   }
+
 }
