@@ -111,18 +111,19 @@ function draw() {
   if (currentScreen === "instructions") {
     displayTextScreen([
       "Hello! Thank you for participating.",
+      ""
+      "You will see two objects moving on a circular path, and sometimes colliding into one another.",
+      "One of the two object displays a rapidly changing digit.",
+      ""
+      "Twice in each presentation (called 'trial'), an uppercase letter will appear briefly -", 
+      "either on one object twice, or once on each object. Regardless of the motion of objects and the digits presented",
+      "your task is to identify the two letters and type them in the order you saw them.",
+      "To do so, just type the corresponding lowercase letter on your keyboard (don't press shift)"
       "",
-      "You will see two objects moving on a circular path.",
-      "Each object displays a rapidly changing digit.",
+      "If you are unsure, try your best: sometimes you will have monitored them without your awareness!,
+      "If you really don't know, press SPACE.",
       "",
-      "One or two times in the trial, a letter will appear briefly on one or both objects.",
-      "These are your target letters.",
-      "",
-      "Your task is to identify the letter(s) and type them in the order you saw them.",
-      "",
-      "If you are unsure, try your best. If you don't know, press SPACE.",
-      "",
-      "Let's start with 20 practice trials."
+      "Sounds simple enough? Let's start with 20 practice trials. Good luck!"
     ]);
     setStatus("Instructions");
     return;
@@ -440,4 +441,5 @@ function keyPressed() {
 // expose p5 entry points
 window.setup = setup;
 window.draw = draw;
+
 window.keyPressed = keyPressed;
